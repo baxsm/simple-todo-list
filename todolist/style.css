@@ -1,0 +1,119 @@
+* {
+    --primary-color : rgb(117, 221, 204);
+    --secondary-color: rgb(62, 122, 112);
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--secondary-color);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 40%;
+    min-width: 450px;
+    border: 1px solid white;
+    padding: 30px 40px;
+    margin: 50px;
+    border-radius: 15px;
+}
+
+#newtask {
+    background-color: #ffff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+}
+
+#newtask input {
+    width: 70%;
+    height: 45px;
+    font-family: sans-serif;
+    font-size: 14px;
+    border: 1px solid #d1d3d4;
+    padding: 12px;
+    color: #111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+}
+
+#newtask input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+#newtask button {
+    width: 20%;
+    height: 45px;
+    position: relative;
+    float: right;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#newtask button:hover {
+    color: var(--secondary-color);
+}
+
+#tasks {
+    width: 100%;
+    position: relative;
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+}
+
+.task {
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    justify-content: space-between;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+}
+
+.task span {
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.task button {
+    width: 40px;
+    height: 100%;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.task button:hover {
+    color: var(--secondary-color);
+}
+
+.completed {
+    text-decoration: line-through;
+    text-decoration-color: var(--secondary-color);
+}
